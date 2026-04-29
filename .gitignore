@@ -12,6 +12,7 @@ npm-debug.log
 yarn-error.log
 
 # IDEs and editors
+.zed/*
 .idea/
 .project
 .classpath
@@ -19,6 +20,9 @@ yarn-error.log
 *.launch
 .settings/
 *.sublime-workspace
+
+# Zed
+!.zed/settings.json
 
 # Visual Studio Code
 .vscode/*
@@ -42,3 +46,25 @@ __screenshots__/
 # System files
 .DS_Store
 Thumbs.db
+
+# Scripts
+*.sh
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Local files
+*.local
+
+# Playwright
+/test-results/
+/playwright-report/
+/playwright/.cache/
+
+# Test artifacts
+.artifacts/
+
+# Playwright artifacts
+.artifacts/playwright/
