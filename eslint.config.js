@@ -9,7 +9,10 @@ import globals from 'globals';
 
 export default defineConfig([
   {
-    files: ['**/*.ts'],
+    ignores: ['dist/**', 'coverage/**', '.artifacts/**', 'node_modules/**'],
+  },
+  {
+    files: ['src/**/*.ts', 'e2e/**/*.ts'],
     languageOptions: {
       ecmaVersion: 2022,
       globals: globals.browser,
@@ -134,6 +137,13 @@ export default defineConfig([
       '@angular-eslint/template/cyclomatic-complexity': ['warn', { maxComplexity: 10 }],
       '@angular-eslint/template/eqeqeq': 'error',
       '@angular-eslint/template/prefer-self-closing-tags': 'warn',
+    },
+  },
+  {
+    files: ['playwright.config.ts', 'commitlint.config.js', 'eslint.config.js', 'vitest.config.ts'],
+    extends: [js.configs.recommended, ...tseslint.configs.recommended],
+    rules: {
+      '@typescript-eslint/consistent-type-imports': 'warn',
     },
   },
 ]);
