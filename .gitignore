@@ -12,7 +12,7 @@ npm-debug.log
 yarn-error.log
 
 # IDEs and editors
-.zed/*
+.zed/
 .idea/
 .project
 .classpath
@@ -25,7 +25,7 @@ yarn-error.log
 !.zed/settings.json
 
 # Visual Studio Code
-.vscode/*
+.vscode/
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
