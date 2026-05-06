@@ -4,7 +4,7 @@ import { defineConfig } from 'eslint/config';
 import tseslint from 'typescript-eslint';
 import angular from 'angular-eslint';
 import stylistic from '@stylistic/eslint-plugin';
-import importPlugin from 'eslint-plugin-import';
+import importPlugin from 'eslint-plugin-import-x';
 import globals from 'globals';
 
 export default defineConfig([
@@ -55,7 +55,6 @@ export default defineConfig([
       '@angular-eslint/prefer-signals': 'warn',
       '@angular-eslint/prefer-output-readonly': 'warn',
       '@angular-eslint/no-empty-lifecycle-method': 'warn',
-      // ts
       '@typescript-eslint/no-useless-constructor': ['error'],
       '@typescript-eslint/array-type': ['error', { default: 'array', readonly: 'array' }],
       '@typescript-eslint/explicit-member-accessibility': [
@@ -76,7 +75,6 @@ export default defineConfig([
       ],
       '@typescript-eslint/no-empty-function': 'warn',
       '@typescript-eslint/no-empty-object-type': 'error',
-      // common
       curly: ['error', 'all'],
       complexity: ['error', 20],
       'max-classes-per-file': ['error', 1],
@@ -93,7 +91,6 @@ export default defineConfig([
       ],
       'no-implicit-coercion': ['error', { allow: ['!!'] }],
       eqeqeq: ['error', 'always'],
-      // import
       'import/extensions': [
         'error',
         {
@@ -114,7 +111,6 @@ export default defineConfig([
       'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
       'import/no-cycle': ['error', { maxDepth: Infinity }],
       'import/first': 'error',
-      // stylistic
       '@stylistic/padding-line-between-statements': [
         'error',
         { blankLine: 'always', prev: '*', next: 'return' },
