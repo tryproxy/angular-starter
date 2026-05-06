@@ -14,11 +14,6 @@
 - Refresh the page.
 - Confirm the selected theme is preserved.
 
-## Checks
-
-- [x] Ready to review
-- [x] Checked manually
-
 ## Trello
 
 - [Card name or link](https://trello.com/)
